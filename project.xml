@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+    <meta title="TrayNotifier" package="com.hypercodecrew.traynotifier" version="1.0.0" company="HyperCodeCrew" />
+    <app main="traynotifier.Build" path="Export" file="TrayNotifier" />
+    
+    <source path="src" />
+    
+    <section if="windows">
+        <haxelib name="hxcpp" />
+        <ndll name="traynotifier" haxelib="traynotifier" />
+        
+        <!-- Include Windows toast notification library -->
+        <include path="include" />
+    </section>
+    
+    <haxedef name="HXCPP_STACK_LINE" if="debug" />
+    <haxedef name="analyzer-optimize" unless="debug" />
+    
+    <haxelib name="openfl" />
+</project>

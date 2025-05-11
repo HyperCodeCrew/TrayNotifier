@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+    <!-- NMML reference: https://gist.github.com/1763850 -->
+    
+    <!-- Application metadata -->
+    <meta title="TrayNotifier OpenFL Example" package="com.hypercodecrew.traynotifier.openfl.example" 
+          version="1.0.0" company="HyperCodeCrew" />
+    
+    <!-- Output settings -->
+    <app main="Main" file="TrayNotifierExample" path="bin" />
+    
+    <!-- Window settings -->
+    <window width="480" height="400" background="#FFFFFF" fps="60" />
+    <window hardware="true" allow-shaders="true" require-shaders="true" if="cpp"/>
+    <window vsync="false" antialiasing="0" if="cpp" />
+    
+    <!-- Classpath -->
+    <source path="." />
+    <source path="../../src" />
+    
+    <!-- Libraries -->
+    <haxelib name="openfl" />
+    <haxelib name="hxcpp" if="cpp" />
+    
+    <!-- Compiler flags -->
+    <haxedef name="HXCPP_STACK_LINE" if="debug" />
+    <haxedef name="hxcpp_smart_strings" />
+    
+    <!-- Compiler conditions -->
+    <section if="windows">
+        <!-- Include Windows toast notification library -->
+        <include path="../../include" />
+    </section>
+    
+    <!-- Assets -->
+    <assets path="assets" rename="assets" embed="false" />
+</project> 

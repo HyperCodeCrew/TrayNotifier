@@ -1,0 +1,5 @@
+-cp src
+-D analyzer-optimize
+-D static_link
+-main traynotifier.Build
+-cpp bin 

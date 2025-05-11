@@ -1,0 +1,14 @@
+{
+  "name": "traynotifier",
+  "url": "https://github.com/HyperCodeCrew/TrayNotifier",
+  "license": "MIT",
+  "tags": ["windows", "notifications", "toast", "native", "cpp"],
+  "description": "Native Windows Toast Notifications for Haxe/C++ using WinToastLib",
+  "version": "1.0.0",
+  "classPath": "src/",
+  "releasenote": "Initial release",
+  "contributors": ["HyperCodeCrew"],
+  "dependencies": {
+    "hxcpp": ""
+  }
+} 
